@@ -1,27 +1,15 @@
-/* =========================
-   RESET
-========================= */
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 
 html {
-    scroll-behavior: smooth;
-}
+    scroll-behavior: smooth;}
 
 body {
     font-family: "Vazirmatn", sans-serif;
     background: #090909;
-    color: #ffffff;
-}
-
-
-/* =========================
-   HEADER
-========================= */
+    color: #ffffff;}
 
 header {
     width: 90%;
@@ -40,11 +28,7 @@ header {
     border-radius: 18px;
 
     position: relative;
-    z-index: 10;
-}
-
-
-/* LOGO */
+    z-index: 10;}
 
 .logo {
     color: #e4b94f;
@@ -52,17 +36,15 @@ header {
     font-size: 20px;
     font-weight: bold;
 
-    direction: ltr;
-}
-
-
-/* NAV */
+    direction: ltr;}
 
 nav {
     display: flex;
     align-items: center;
     gap: 35px;
-}
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);}
 
 nav a {
     position: relative;
@@ -73,15 +55,10 @@ nav a {
 
     font-size: 14px;
 
-    transition: 0.3s;
-}
+    transition: 0.3s;}
 
 nav a:hover {
-    color: #e4b94f;
-}
-
-
-/* خط طلایی زیر لینک */
+    color: #e4b94f;}
 
 nav a::after {
     content: "";
@@ -96,34 +73,10 @@ nav a::after {
 
     background: #e4b94f;
 
-    transition: 0.3s;
-}
+    transition: 0.3s;}
 
 nav a:hover::after {
-    width: 100%;
-}
-
-
-/* SEARCH */
-
-.search {
-    color: #e4b94f;
-
-    font-size: 18px;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.search:hover {
-    transform: scale(1.15);
-}
-
-
-/* =========================
-   HERO
-========================= */
+    width: 100%;}
 
 .hero {
     width: 90%;
@@ -141,21 +94,13 @@ nav a:hover::after {
     border-radius: 20px;
 
     background:
-        linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 0.35),
-            rgba(0, 0, 0, 0.85)
-        ),
+        linear-gradient(90deg,rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.85)),
         url("../Images/daruish Logo.png");
 
     background-size: cover;
     background-position: center;
 
-    border: 1px solid rgba(212, 168, 73, 0.25);
-}
-
-
-/* تاریکی روی تصویر */
+    border: 1px solid rgba(212, 168, 73, 0.25);}
 
 .hero::before {
     content: "";
@@ -164,18 +109,9 @@ nav a:hover::after {
 
     inset: 0;
 
-    background:
-        radial-gradient(
-            circle at 30% 50%,
-            rgba(214, 167, 60, 0.12),
-            transparent 35%
-        );
+    background: radial-gradient(circle at 30% 50%,rgba(214, 167, 60, 0.12),transparent 35%);
 
-    pointer-events: none;
-}
-
-
-/* HERO CONTENT */
+    pointer-events: none;}
 
 .hero-content {
     width: 55%;
@@ -183,22 +119,14 @@ nav a:hover::after {
     padding-right: 70px;
 
     position: relative;
-    z-index: 2;
-}
-
-
-/* متن کوچک */
+    z-index: 2;}
 
 .small-title {
     color: #d8aa45;
 
     font-size: 17px;
 
-    margin-bottom: 18px;
-}
-
-
-/* عنوان */
+    margin-bottom: 18px;}
 
 .hero h1 {
     color: #ffffff;
@@ -209,11 +137,7 @@ nav a:hover::after {
 
     margin-bottom: 20px;
 
-    font-weight: 800;
-}
-
-
-/* توضیحات */
+    font-weight: 800;}
 
 .hero-description {
     color: #bdbdbd;
@@ -224,19 +148,12 @@ nav a:hover::after {
 
     max-width: 500px;
 
-    margin-bottom: 30px;
-}
-
-
-/* =========================
-   HERO BUTTONS
-========================= */
+    margin-bottom: 30px;}
 
 .hero-buttons {
     display: flex;
 
-    gap: 15px;
-}
+    gap: 15px;}
 
 .artist-button {
     min-width: 125px;
@@ -258,31 +175,19 @@ nav a:hover::after {
     font-size: 15px;
     font-weight: bold;
 
-    transition: 0.3s;
-}
+    transition: 0.3s;}
 
 .artist-button:hover {
     background: #f2d174;
 
     transform: translateY(-4px);
 
-    box-shadow:
-        0 10px 25px rgba(228, 185, 79, 0.25);
-}
-
-
-/* =========================
-   PLAYLIST SECTION
-========================= */
+    box-shadow: 0 10px 25px rgba(228, 185, 79, 0.25);}
 
 .playlists {
     width: 90%;
 
-    margin: 70px auto;
-}
-
-
-/* TITLE */
+    margin: 70px auto;}
 
 .playlists h2 {
     color: #e4b94f;
@@ -293,8 +198,7 @@ nav a:hover::after {
 
     position: relative;
 
-    padding-right: 15px;
-}
+    padding-right: 15px;}
 
 .playlists h2::before {
     content: "";
@@ -309,24 +213,14 @@ nav a:hover::after {
 
     background: #e4b94f;
 
-    border-radius: 5px;
-}
-
-
-/* CARDS CONTAINER */
+    border-radius: 5px;}
 
 .playlist-container {
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
 
-    gap: 25px;
-}
-
-
-/* =========================
-   PLAYLIST CARD
-========================= */
+    gap: 25px;}
 
 .playlist-card {
     min-height: 250px;
@@ -341,8 +235,7 @@ nav a:hover::after {
 
     border-radius: 16px;
 
-    transition: 0.35s;
-}
+    transition: 0.35s;}
 
 .playlist-card:hover {
     transform: translateY(-7px);
@@ -350,11 +243,7 @@ nav a:hover::after {
     border-color: rgba(228, 185, 79, 0.65);
 
     box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.5);
-}
-
-
-/* IMAGE */
+        0 15px 40px rgba(0, 0, 0, 0.5);}
 
 .playlist-card img {
     width: 45%;
@@ -363,15 +252,10 @@ nav a:hover::after {
 
     object-fit: cover;
 
-    transition: 0.4s;
-}
+    transition: 0.4s;}
 
 .playlist-card:hover img {
-    transform: scale(1.05);
-}
-
-
-/* CARD INFO */
+    transform: scale(1.05);}
 
 .playlist-info {
     flex: 1;
@@ -382,16 +266,14 @@ nav a:hover::after {
 
     flex-direction: column;
 
-    justify-content: center;
-}
+    justify-content: center;}
 
 .playlist-info h3 {
     color: #ffffff;
 
     font-size: 21px;
 
-    margin-bottom: 12px;
-}
+    margin-bottom: 12px;}
 
 .playlist-info p {
     color: #999999;
@@ -400,11 +282,7 @@ nav a:hover::after {
 
     line-height: 1.9;
 
-    margin-bottom: 20px;
-}
-
-
-/* CARD BUTTON */
+    margin-bottom: 20px;}
 
 .playlist-info a {
     width: fit-content;
@@ -421,47 +299,501 @@ nav a:hover::after {
 
     font-size: 13px;
 
-    transition: 0.3s;
-}
+    transition: 0.3s;}
 
 .playlist-info a:hover {
     color: #111111;
 
-    background: #e4b94f;
-}
+    background: #e4b94f;}
 
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
+.main-footer {
     width: 90%;
 
-    margin: 0 auto 25px;
+    margin: 80px auto 25px;
 
-    padding: 25px 30px;
+    background: radial-gradient(circle at 20% 10%,rgba(228, 185, 79, 0.08),transparent 30%),#0d0d0d;
+
+    border: 1px solid rgba(228, 185, 79, 0.35);
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.55);}
+
+.footer-container {
+    display: grid;
+
+    grid-template-columns:
+        1.3fr
+        1fr
+        1fr
+        1.3fr;
+
+    min-height: 300px;}
+
+.footer-column {
+    padding: 40px 35px;
+
+    border-left:
+        1px solid rgba(228, 185, 79, 0.18);
 
     display: flex;
 
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 
-    background: #101010;
+    align-items: flex-start;}
 
-    border-top: 1px solid rgba(228, 185, 79, 0.25);
-
-    border-radius: 15px;
-}
+.footer-column:last-child {
+    border-left: none;}
 
 .footer-logo {
     color: #e4b94f;
 
-    font-weight: bold;
-}
+    font-size: 24px;
 
-footer p {
-    color: #777777;
+    font-weight: 800;
+
+    margin-bottom: 25px;}
+
+.footer-logo span {
+    color: #ffffff;}
+
+.footer-about p {
+    color: #999999;
 
     font-size: 13px;
-}
+
+    line-height: 2.2;
+
+    max-width: 280px;}
+
+.footer-column h3 {
+    color: #ffffff;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;}
+
+.footer-line {
+    width: 40px;
+
+    height: 3px;
+
+    display: block;
+
+    margin-bottom: 25px;
+
+    border-radius: 5px;
+
+    background: linear-gradient(90deg,#e4b94f,#8b691f);}
+ 
+.footer-column > a {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+
+    color: #bdbdbd;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s;}
+
+
+.footer-column > a span {
+    color: #e4b94f;
+
+    font-size: 18px;
+
+    transition: 0.3s;}
+
+
+.footer-column > a:hover {
+    color: #e4b94f;
+
+    padding-right: 7px;}
+
+
+.footer-column > a:hover span {
+    transform: translateX(-5px);}
+
+.social-icons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;}
+
+
+.social-icons a {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #d8d8d8;
+
+    text-decoration: none;
+
+    border: 1px solid rgba(228, 185, 79, 0.6);
+
+    border-radius: 10px;
+
+    transition: 0.3s;}
+
+
+.social-icons a:hover {
+    color: #111111;
+
+    background: #e4b94f;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(228, 185, 79, 0.2);}
+
+.footer-contact p {
+    color: #999999;
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    margin-bottom: 25px;}
+
+.footer-button {
+    width: auto !important;
+
+    align-self: flex-start;
+
+    padding: 11px 20px;
+
+    border: 1px solid #e4b94f;
+
+    border-radius: 10px;
+
+    color: #e4b94f !important;
+
+    margin-top: auto;}
+
+
+.footer-button:hover {
+    color: #111111 !important;
+
+    background: #e4b94f;
+
+    padding-right: 20px !important;}
+
+
+.footer-button span {
+    margin-right: 15px;}
+
+.footer-bottom {
+    min-height: 75px;
+    padding: 20px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(228, 185, 79, 0.18);}
+
+
+.footer-bottom p {
+    color: #777777;
+
+    font-size: 12px;}
+
+
+.footer-bottom p:last-child {
+    color: #e4b94f;}
+
+/* ------------Media-------------- */
+@media (max-width: 1000px) {
+
+    /* Header */
+
+    header {
+        width: 94%;
+        padding: 0 20px;}
+
+    nav {
+        gap: 22px;}
+
+    nav a {
+        font-size: 13px;}
+
+
+    /* Hero */
+
+    .hero {
+        width: 94%;
+        min-height: 480px;}
+
+    .hero-content {
+        width: 65%;
+        padding-right: 45px;}
+
+    .hero h1 {
+        font-size: 44px;}
+
+
+    /* Playlists */
+
+    .playlists {
+        width: 94%;}
+
+    .playlist-container {
+        grid-template-columns: 1fr;}
+
+    .playlist-card img {
+        width: 40%;
+        height: 250px;}
+
+
+    /* Footer */
+
+    .main-footer {
+        width: 94%;}
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;}
+
+    .footer-column {
+        border-left: none;
+        border-bottom: 1px solid rgba(228, 185, 79, 0.15);}}
+
+@media (max-width: 650px) {
+
+    /* Header */
+
+    header {
+        width: 94%;
+        height: auto;
+
+        min-height: 70px;
+
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;}
+
+    .logo {
+        font-size: 19px;}
+
+    nav {
+        position: static;
+
+        transform: none;
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px 20px;}
+
+    nav a {
+        font-size: 12px;}
+
+
+    /* Hero */
+
+    .hero {
+        width: 94%;
+
+        min-height: 500px;
+
+        margin-top: 20px;
+
+        background-position: center;}
+
+    .hero-content {
+        width: 100%;
+
+        padding: 40px 25px;
+
+        text-align: center;}
+
+    .small-title {
+        font-size: 14px;}
+
+    .hero h1 {
+        font-size: 35px;
+
+        line-height: 1.5;}
+
+    .hero-description {
+        font-size: 14px;
+
+        line-height: 2;
+
+        margin-left: auto;
+        margin-right: auto;}
+
+
+    /* Hero Buttons */
+
+    .hero-buttons {
+        justify-content: center;
+
+        flex-wrap: wrap;}
+
+    .artist-button {
+        min-width: 110px;
+
+        padding: 11px 20px;
+
+        font-size: 14px;}
+
+
+    /* Playlists */
+
+    .playlists {
+        width: 94%;
+
+        margin: 55px auto;}
+
+    .playlists h2 {
+        font-size: 22px;}
+
+    .playlist-container {
+        grid-template-columns: 1fr;}
+
+    .playlist-card {
+        flex-direction: column;}
+
+    .playlist-card img {
+        width: 100%;
+
+        height: 220px;}
+
+    .playlist-info {
+        padding: 25px;}
+
+    .playlist-info h3 {
+        font-size: 19px;}
+
+
+    /* Footer */
+
+    .main-footer {
+        width: 94%;
+
+        margin-top: 60px;
+
+        border-radius: 18px;}
+
+    .footer-container {
+        grid-template-columns: 1fr;}
+
+    .footer-column {
+        padding: 30px 25px;
+
+        border-left: none;}
+
+    .footer-about p {
+        max-width: 100%;}
+
+    .footer-contact p {
+        font-size: 12px;}
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+
+        padding: 20px;}}
+
+@media (max-width: 400px) {
+
+    /* Header */
+
+    header {
+        padding: 15px;}
+
+    nav {
+        gap: 12px 15px;}
+
+    nav a {
+        font-size: 11px;}
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 470px;}
+
+    .hero-content {
+        padding: 35px 18px;}
+
+    .small-title {
+        font-size: 13px;}
+
+    .hero h1 {
+        font-size: 29px;}
+
+    .hero-description {
+        font-size: 13px;}
+
+
+    /* Buttons */
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;}
+
+    .artist-button {
+        width: 150px;}
+
+
+    /* Playlists */
+
+    .playlists h2 {
+        font-size: 20px;}
+
+    .playlist-card img {
+        height: 180px;}
+
+    .playlist-info {
+        padding: 20px;}
+
+    .playlist-info h3 {
+        font-size: 18px;}
+
+    .playlist-info p {
+        font-size: 12px;}
+
+
+    /* Footer */
+
+    .footer-column {
+        padding: 25px 20px;}
+
+    .footer-logo {
+        font-size: 21px;}
+
+    .footer-column h3 {
+        font-size: 16px;}
+
+    .social-icons a {
+        width: 38px;
+        height: 38px;
+    }}

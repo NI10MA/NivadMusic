@@ -417,36 +417,30 @@ footer > p {
 @media (max-width: 900px) {
 
     header {
-        width: 92%;
-    }
+        width: 92%;}
 
     nav {
-        gap: 18px;
-    }
+        gap: 18px;}
 
 
     .biography {
         grid-template-columns: 1fr;
 
-        gap: 50px;
-    }
+        gap: 50px;}
 
 
     .biography-image {
         width: 80%;
 
-        margin: auto;
-    }
+        margin: auto;}
 
 
     .music-cards {
-        grid-template-columns: 1fr 1fr;
-    }
+        grid-template-columns: 1fr 1fr;}
 
 
     .timeline-container::before {
-        right: 20px;
-    }
+        right: 20px;}
 
 
     .timeline-item {
@@ -460,10 +454,7 @@ footer > p {
 
         padding-left: 10px;
 
-        margin-bottom: 35px;
-    }
-
-}
+        margin-bottom: 35px;}}
 
 
 @media (max-width: 600px) {
@@ -475,8 +466,7 @@ footer > p {
 
         flex-direction: column;
 
-        gap: 15px;
-    }
+        gap: 15px;}
 
 
     nav {
@@ -484,13 +474,11 @@ footer > p {
 
         justify-content: center;
 
-        gap: 15px;
-    }
+        gap: 15px;}
 
 
     .bio-hero {
-        min-height: 500px;
-    }
+        min-height: 500px;}
 
 
     .biography,
@@ -500,38 +488,29 @@ footer > p {
 
         margin-top: 90px;
 
-        margin-bottom: 90px;
-    }
+        margin-bottom: 90px;}
 
 
     .biography-image {
-        width: 100%;
-    }
+        width: 100%;}
 
 
     .biography-text h2 {
-        font-size: 30px;
-    }
+        font-size: 30px;}
 
 
     .timeline-title h2,
     .music-title h2 {
-        font-size: 30px;
-    }
+        font-size: 30px;}
 
 
     .music-cards {
-        grid-template-columns: 1fr;
-    }
+        grid-template-columns: 1fr;}
 
 
     .music-card img {
-        height: 260px;
-    }
+        height: 260px;}
 
 
     .quote-content p {
-        font-size: 19px;
-    }
-
-}
+        font-size: 19px;}}

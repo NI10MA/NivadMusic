@@ -54,16 +54,11 @@
                 پلی‌لیست ها
             </a>
 
-            <a href="https://nivadcorp.ir/">
+            <a href="/index.html#Footer">
                 درباره ما
             </a>
 
         </nav>
-
-
-        <div class="search">
-            🔍
-        </div>
 
     </header>
 
@@ -436,71 +431,79 @@
 
     <script>
 
-        let audio = new Audio();
+    let audio = new Audio();
 
-        let currentButton = null;
-
-
-        function playSong(song, button) {
-
-            /* اگر همین آهنگ در حال پخش است */
-
-            if (currentButton === button && !audio.paused) {
-
-                audio.pause();
-
-                button.innerHTML = "▶";
-
-                return;
-            }
+    let currentButton = null;
 
 
-            /* توقف آهنگ قبلی */
+    function playSong(song, button) {
+
+        /* اگر همین آهنگ در حال پخش است */
+        if (currentButton === button && !audio.paused) {
 
             audio.pause();
 
+            button.innerHTML = "▶";
 
-            /* پخش آهنگ جدید */
-
-            audio = new Audio(song);
-
-            currentButton = button;
+            return;
+        }
 
 
-            audio.play()
+        /* اگر آهنگ قبلی وجود دارد، دکمه‌اش را برگردان */
+        if (currentButton !== null) {
 
-                .then(() => {
-
-                    button.innerHTML = "❚❚";
-
-                })
-
-                .catch((error) => {
-
-                    console.log(
-                        "خطا در پخش آهنگ:",
-                        error
-                    );
-
-                });
-
-
-            /* پایان آهنگ */
-
-            audio.addEventListener(
-                "ended",
-                function () {
-
-                    button.innerHTML = "▶";
-
-                    currentButton = null;
-
-                }
-            );
+            currentButton.innerHTML = "▶";
 
         }
 
-    </script>
+
+        /* توقف آهنگ قبلی */
+        audio.pause();
+
+
+        /* ساخت و پخش آهنگ جدید */
+        audio = new Audio(song);
+
+        currentButton = button;
+
+
+        audio.play()
+
+            .then(() => {
+
+                button.innerHTML = "❚❚";
+
+            })
+
+            .catch((error) => {
+
+                console.log(
+                    "خطا در پخش آهنگ:",
+                    error
+                );
+
+                button.innerHTML = "▶";
+
+                currentButton = null;
+
+            });
+
+
+        /* وقتی آهنگ تمام شد */
+        audio.addEventListener(
+            "ended",
+            function () {
+
+                button.innerHTML = "▶";
+
+                currentButton = null;
+
+            }
+        );
+
+    }
+
+</script>
 
 
 </body>
