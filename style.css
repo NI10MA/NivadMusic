@@ -323,14 +323,9 @@ nav a:hover::after {
 
 .footer-container {
     display: grid;
-
-    grid-template-columns:
-        1.3fr
-        1fr
-        1fr
-        1.3fr;
-
-    min-height: 300px;}
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
 
 .footer-column {
     padding: 40px 35px;
@@ -474,31 +469,42 @@ nav a:hover::after {
     margin-bottom: 25px;}
 
 .footer-button {
-    width: auto !important;
-
-    align-self: flex-start;
-
+    width: fit-content;
+    margin-top: 20px;
     padding: 11px 20px;
 
-    border: 1px solid #e4b94f;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
 
+    color: #e4b94f;
+    background: rgba(228, 185, 79, 0.08);
+
+    border: 1px solid rgba(228, 185, 79, 0.5);
     border-radius: 10px;
 
-    color: #e4b94f !important;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
 
-    margin-top: auto;}
-
-
-.footer-button:hover {
-    color: #111111 !important;
-
-    background: #e4b94f;
-
-    padding-right: 20px !important;}
-
+    transition: 0.3s ease;}
 
 .footer-button span {
-    margin-right: 15px;}
+    font-size: 18px;
+    transition: 0.3s ease;}
+
+.footer-button:hover {
+    color: #111 !important;
+    background: #e4b94f;
+    border-color: #e4b94f;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 25px rgba(228, 185, 79, 0.25);}
+
+.footer-button:hover span {
+    color: #111 !important;
+    transform: translateX(-5px);}
 
 .footer-bottom {
     min-height: 75px;
@@ -517,6 +523,37 @@ nav a:hover::after {
 
 .footer-bottom p:last-child {
     color: #e4b94f;}
+
+.contact-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    color: #aaa;
+    font-size: 13px;
+    direction: ltr;
+    justify-content: flex-start;}
+
+.contact-info i {
+    color: #e4b94f;
+    font-size: 15px;
+    width: 20px;
+    text-align: center;}
+
+.contact-info span {
+    transition: 0.3s;}
+
+.contact-info p:hover span {
+    color: #fff;}
+
+.contact-info p:hover i {
+    color: #f2d174;}
 
 /* ------------Media-------------- */
 @media (max-width: 1000px) {

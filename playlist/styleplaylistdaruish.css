@@ -99,8 +99,7 @@ nav a::after {
 }
 
 nav a:hover::after {
-    width: 100%;
-}
+    width: 100%;}
 
 
 /* ================= PLAYLIST HERO ================= */
@@ -126,8 +125,7 @@ nav a:hover::after {
         url("Images/playlist-bg.jpg");
 
     background-size: cover;
-    background-position: center;
-}
+    background-position: center;}
 
 
 /* OVERLAY */
@@ -139,22 +137,14 @@ nav a:hover::after {
 
     inset: 0;
 
-    background:
-        radial-gradient(
-            circle at center,
-            transparent 10%,
-            rgba(0, 0, 0, 0.75) 90%
-        );
-}
-
+    background: radial-gradient(circle at center,transparent 10%,rgba(0, 0, 0, 0.75) 90%);}
 
 .playlist-hero-content {
     position: relative;
 
     z-index: 2;
 
-    margin-top: 70px;
-}
+    margin-top: 70px;}
 
 
 /* SMALL TITLE */
@@ -166,8 +156,7 @@ nav a:hover::after {
 
     letter-spacing: 4px;
 
-    margin-bottom: 15px;
-}
+    margin-bottom: 15px;}
 
 
 /* HERO TITLE */
@@ -181,15 +170,13 @@ nav a:hover::after {
 
     letter-spacing: 2px;
 
-    margin-bottom: 15px;
-}
+    margin-bottom: 15px;}
 
 
 .playlist-hero-content p {
     color: #b8b8b8;
 
-    font-size: 16px;
-}
+    font-size: 16px;}
 
 
 /* ================= PLAYLISTS ================= */
@@ -199,8 +186,7 @@ nav a:hover::after {
 
     max-width: 1200px;
 
-    margin: 120px auto;
-}
+    margin: 120px auto;}
 
 
 /* TITLE */
@@ -208,8 +194,7 @@ nav a:hover::after {
 .playlist-title {
     text-align: center;
 
-    margin-bottom: 65px;
-}
+    margin-bottom: 65px;}
 
 
 .section-title {
@@ -217,8 +202,7 @@ nav a:hover::after {
 
     font-size: 13px;
 
-    letter-spacing: 3px;
-}
+    letter-spacing: 3px;}
 
 
 .playlist-title h2 {
@@ -226,15 +210,13 @@ nav a:hover::after {
 
     font-size: 38px;
 
-    margin: 10px 0;
-}
+    margin: 10px 0;}
 
 
 .playlist-title p {
     color: #858585;
 
-    font-size: 14px;
-}
+    font-size: 14px;}
 
 
 /* PLAYLIST CARDS */
@@ -244,8 +226,7 @@ nav a:hover::after {
 
     grid-template-columns: repeat(2, 1fr);
 
-    gap: 30px;
-}
+    gap: 30px;}
 
 
 /* CARD */
@@ -263,15 +244,13 @@ nav a:hover::after {
 
     border: 1px solid rgba(255, 255, 255, 0.08);
 
-    transition: 0.4s;
-}
+    transition: 0.4s;}
 
 
 .playlist-card:hover {
     transform: translateY(-8px);
 
-    border-color: rgba(213, 168, 91, 0.55);
-}
+    border-color: rgba(213, 168, 91, 0.55);}
 
 
 /* IMAGE */
@@ -279,8 +258,7 @@ nav a:hover::after {
 .playlist-image {
     height: 100%;
 
-    overflow: hidden;
-}
+    overflow: hidden;}
 
 
 .playlist-image img {
@@ -291,15 +269,13 @@ nav a:hover::after {
 
     filter: grayscale(100%);
 
-    transition: 0.6s;
-}
+    transition: 0.6s;}
 
 
 .playlist-card:hover .playlist-image img {
     filter: grayscale(0%);
 
-    transform: scale(1.05);
-}
+    transform: scale(1.05);}
 
 
 /* INFO */
@@ -311,8 +287,7 @@ nav a:hover::after {
 
     flex-direction: column;
 
-    justify-content: center;
-}
+    justify-content: center;}
 
 
 .playlist-number {
@@ -320,8 +295,7 @@ nav a:hover::after {
 
     font-size: 13px;
 
-    letter-spacing: 2px;
-}
+    letter-spacing: 2px;}
 
 
 .playlist-info h3 {
@@ -329,8 +303,7 @@ nav a:hover::after {
 
     font-size: 30px;
 
-    margin: 8px 0 12px;
-}
+    margin: 8px 0 12px;}
 
 
 .playlist-info p {
@@ -338,8 +311,7 @@ nav a:hover::after {
 
     font-size: 13px;
 
-    margin-bottom: 18px;
-}
+    margin-bottom: 18px;}
 
 
 .song-count {
@@ -347,8 +319,7 @@ nav a:hover::after {
 
     font-size: 12px;
 
-    margin-bottom: 20px;
-}
+    margin-bottom: 20px;}
 
 
 .playlist-info a {
@@ -362,26 +333,21 @@ nav a:hover::after {
 
     border-bottom: 1px solid transparent;
 
-    transition: 0.3s;
-}
+    transition: 0.3s;}
 
 
 .playlist-info a:hover {
     color: #ffffff;
 
-    border-color: #d5a85b;
-}
+    border-color: #d5a85b;}
 
 
 /* ================= SONGS ================= */
 
-.songs {
-    width: 85%;
-
-    max-width: 1000px;
-
-    margin: 160px auto;
-}
+.song {
+    display: grid;
+    grid-template-columns: 45px 65px 1fr 70px 50px 50px;
+    align-items: center;}
 
 
 /* SONG TITLE */
@@ -389,8 +355,7 @@ nav a:hover::after {
 .songs-title {
     text-align: center;
 
-    margin-bottom: 55px;
-}
+    margin-bottom: 55px;}
 
 
 .songs-title h2 {
@@ -398,8 +363,7 @@ nav a:hover::after {
 
     font-size: 38px;
 
-    margin-top: 10px;
-}
+    margin-top: 10px;}
 
 
 /* SONG LIST */
@@ -409,8 +373,7 @@ nav a:hover::after {
 
     flex-direction: column;
 
-    gap: 10px;
-}
+    gap: 10px;}
 
 
 /* SONG ITEM */
@@ -432,15 +395,13 @@ nav a:hover::after {
 
     border: 1px solid rgba(255, 255, 255, 0.06);
 
-    transition: 0.3s;
-}
+    transition: 0.3s;}
 
 
 .song-item:hover {
     background: #161616;
 
-    border-color: rgba(213, 168, 91, 0.35);
-}
+    border-color: rgba(213, 168, 91, 0.35);}
 
 
 /* NUMBER */
@@ -448,8 +409,7 @@ nav a:hover::after {
 .song-number {
     color: #666666;
 
-    font-size: 13px;
-}
+    font-size: 13px;}
 
 
 /* SONG IMAGE */
@@ -464,13 +424,11 @@ nav a:hover::after {
 
     filter: grayscale(100%);
 
-    transition: 0.4s;
-}
+    transition: 0.4s;}
 
 
 .song-item:hover img {
-    filter: grayscale(0%);
-}
+    filter: grayscale(0%);}
 
 
 /* SONG INFO */
@@ -480,15 +438,13 @@ nav a:hover::after {
 
     font-size: 16px;
 
-    margin-bottom: 2px;
-}
+    margin-bottom: 2px;}
 
 
 .song-info p {
     color: #777777;
 
-    font-size: 12px;
-}
+    font-size: 12px;}
 
 
 /* DURATION */
@@ -498,8 +454,7 @@ nav a:hover::after {
 
     font-size: 12px;
 
-    direction: ltr;
-}
+    direction: ltr;}
 
 
 /* PLAY BUTTON */
@@ -518,8 +473,7 @@ nav a:hover::after {
 
     cursor: pointer;
 
-    transition: 0.3s;
-}
+    transition: 0.3s;}
 
 
 .play-button:hover {
@@ -527,10 +481,38 @@ nav a:hover::after {
 
     color: #0a0a0a;
 
-    transform: scale(1.08);
-}
+    transform: scale(1.08);}
 
+/* ================= DOWNLOAD BUTTON ================= */
 
+/* .download-button {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(228, 185, 79, 0.08);
+    color: #e4b94f;
+
+    border: 1px solid rgba(228, 185, 79, 0.45);
+    border-radius: 10px;
+
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: 0.3s ease;}
+
+.download-button:hover {
+    background: #e4b94f;
+    color: #111;
+
+    border-color: #e4b94f;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(228, 185, 79, 0.2);} */
 /* ================= FOOTER ================= */
 
 footer {
